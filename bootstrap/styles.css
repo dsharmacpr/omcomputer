@@ -1,0 +1,82 @@
+
+/*---------------------------mairn heading text-------------------------------------*/
+.header a h1{
+  font-family: 'Noto Serif', serif;
+  color: rgba(255, 0, 0, 0.5);
+  font-weight: bold;
+}
+@media screen and (min-width: 301px) {
+.header a h1{
+      font-size: 50px;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+.header a h1{
+      font-size: 30px;
+    }
+.header a h4{
+  font-size: 10px;
+  }
+}
+
+/*-----------------------logo------------------*/
+  .header img{
+  width: 100%;
+  height: auto;
+  max-width: 6vw;/* Magic! */
+  }
+/*--------------------end logo----------------*/
+/*----------------------------NavBar------------------------*/
+nav{
+  box-shadow: 0 0 5px black;
+}
+.sticky{
+  position: sticky;;; /* Sticky/fixed navbar */
+  z-index: 3;
+  top: 0; /* At the top */
+}
+/*----------------------End Navbar------------------------*/
+
+
+.mobnavinfo{
+  background-color: rgba(128, 204, 255,0.4) !important;
+  box-shadow: 0 0 10px black;
+}
+.main-carousel{
+  box-shadow: 0 0 10px black;
+}/* Style the navbar */
+
+
+
+
+
+
+/*-------------------------------Services--------------------*/
+/*-------------------------------Services- card-image hover(zoom)--------------------*/
+.card-img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.card-img-wrap:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.2);
+  opacity: 0;
+  transition: opacity 1s;
+}
+.card-img-wrap img {
+  transition: transform 1s;   /*image zoom time*/
+  width: 100%;
+}
+.card-img-wrap:hover img {
+  transform: scale(1.4);
+}
+.card-img-wrap:hover:after {
+  opacity: 0.5;  /*-----image light after hover
+}
+/*-------------------------------End card img hover (zoom)--------------------*/
+
+
+/*-------------------------------End Services--------------------*/
